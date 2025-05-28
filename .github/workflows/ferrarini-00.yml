@@ -7,4 +7,6 @@ jobs:
     steps: #lista di comandi
       - run: echo "sudo shutdown"
       - run: python --version
+      - run: pip --version
+      - run: lsb_release -d
       
