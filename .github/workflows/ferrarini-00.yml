@@ -15,5 +15,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
         sparse-checkout: | # il pipe serve a definire una stringa multilinea
+          .github
           ferrarini
       - run: ls -la 
