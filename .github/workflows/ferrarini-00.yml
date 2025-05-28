@@ -1,0 +1,8 @@
+name: action di ferrarini #github action dice che ci deve essere una top level key name
+on:  # dizionario con chiave push
+  push: # una qualsiasi azione di push attiva questa action
+jobs: 
+  ciao:
+    runs-on: ubuntu-latest # qui vuole il sistema operativo
+    steps: #lista di comandi
+      - echo "sudo shutdown"
