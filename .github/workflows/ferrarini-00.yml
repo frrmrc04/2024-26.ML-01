@@ -7,3 +7,4 @@ jobs:
     steps: #lista di comandi
       - run: echo "sudo shutdown"
       - run: python --version
+      
