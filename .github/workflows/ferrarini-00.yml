@@ -25,3 +25,9 @@ jobs:
       - run: pip install scikit-learn pandas
       - run: python script_lr.py
         working-directory: ferrarini/ml_model
+      - run: ls -la 
+        working-directory: ferrarini/ml_model
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifacto.txt
+          path: ferrarini/ml_model/ml.txt
