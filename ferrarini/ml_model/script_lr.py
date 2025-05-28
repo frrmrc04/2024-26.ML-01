@@ -144,4 +144,4 @@ pipe_rl.fit(x_train, y_train)
 y_test_pred=pipe_rl.predict(x_test)
 print(mean_absolute_error(y_test, y_test_pred))
 
-joblib.dump(pipe_rl, 'ferrarini/ml_model/linear_regression_model.joblib')
+joblib.dump(pipe_rl, 'linear_regression_model.joblib')
