@@ -24,4 +24,4 @@ jobs:
       - run: python --version
       - run: pip install scikit-learn pandas
       - run: python script_lr.py
-        working-directory: ferrarini
+        working-directory: ferrarini/ml_model
