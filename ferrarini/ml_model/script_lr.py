@@ -9,7 +9,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-df_original=pd.read_csv(r'2024-26.ML-01\ferrarini\ml model\df_clean_5.csv')
+df_original=pd.read_csv(r'ferrarini\ml_model\df_clean_5.csv')
 sklearn.set_config(transform_output='pandas')
 
 df = df_original.sample(frac=1, random_state=42)
