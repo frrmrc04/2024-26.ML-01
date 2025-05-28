@@ -12,8 +12,6 @@ from sklearn.pipeline import Pipeline
 df_original=pd.read_csv(r'df_clean_5.csv')
 sklearn.set_config(transform_output='pandas')
 
-df = df_original.sample(frac=1, random_state=42)
-
 
 # filtraggio colonne utili
 
@@ -58,6 +56,10 @@ df_original = df_original[[
     # Fonte 
     'report_source'
 ]]
+
+
+#sampling dataframe
+df = df_original.sample(frac=1, random_state=42)
 
 # colonne numeriche e categoriche
 
@@ -114,7 +116,6 @@ num_cols = [
 
 #train_test_split
 x_train, x_test, y_train, y_test=train_test_split(df.drop(columns='survival_months'),df['survival_months'], test_size=0.2, shuffle=True, random_state=42)
-
 
 # encoder e pipeline
 encoding=ColumnTransformer(
