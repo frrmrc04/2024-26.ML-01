@@ -18,7 +18,10 @@ jobs:
             .github
             ferrarini
       - run: ls -la 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5 # equivalente di venv
         with:
           python-version: '3.12.7'
       - run: python --version
+      - run: pip install scikit-learn pandas
+      - run: python script_lr.py
+        working-directory: ferrarini
