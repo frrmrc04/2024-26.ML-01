@@ -12,3 +12,8 @@ jobs:
       - run: ls -la 
       - run: pwd
       - run: env
+      - uses: actions/checkout@v4
+        with:
+        sparse-checkout: | # il pipe serve a definire una stringa multilinea
+          ferrarini
+      - run: ls -la 
