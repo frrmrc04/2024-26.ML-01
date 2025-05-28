@@ -5,4 +5,4 @@ jobs:
   ciao:
     runs-on: ubuntu-latest # qui vuole il sistema operativo
     steps: #lista di comandi
-      - echo "sudo shutdown"
+      - run: echo "sudo shutdown"
