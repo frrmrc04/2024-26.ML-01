@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+import joblib
 
 df_original=pd.read_csv(r'df_clean_5.csv')
 sklearn.set_config(transform_output='pandas')
@@ -142,3 +143,5 @@ pipe_rl=Pipeline(
 pipe_rl.fit(x_train, y_train)
 y_test_pred=pipe_rl.predict(x_test)
 print(mean_absolute_error(y_test, y_test_pred))
+
+joblib.dump(pipe_rl, 'linear_regression_model.joblib')

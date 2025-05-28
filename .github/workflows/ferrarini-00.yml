@@ -27,7 +27,7 @@ jobs:
         working-directory: ferrarini/ml_model
       - run: ls -la 
         working-directory: ferrarini/ml_model
-      - uses: actions/upload-artifact@v4
-        with:
-          name: artifacto.txt
-          path: ferrarini/ml_model/ml.txt
+        - uses: actions/upload-artifact@v4
+          with:
+            name: artifacto
+            path: ferrarini/ml_model/linear_model.joblib
