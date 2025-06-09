@@ -98,7 +98,7 @@ def hello():
         'n_in_situ_malignant_tumors': [param43],
         'report_source': [param44]
     })
-    modello=joblib.load('ferrarini\ml_model\linear_regression_model.joblib')
+    modello=joblib.load('linear_regression_model.joblib')
     
     print("###################### PREDICT PARAMETERS NEXT LINE ############################")
     print(parameters)
