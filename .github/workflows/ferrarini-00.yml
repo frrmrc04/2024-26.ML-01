@@ -31,7 +31,7 @@ jobs:
         with:
           name: artifacto
           path: ferrarini/ml_model/linear_regression_model.joblib
-      - run: pytest test_app.py --tb=short
+      - run: pytest test_appp.py --tb=short
         working-directory: ferrarini/ml_model
 
       - uses: actions/upload-artifact@v4
