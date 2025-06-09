@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.12.7'
       - run: python --version
-      - run: pip install scikit-learn pandas pytest
+      - run: pip install scikit-learn pandas pytest flask
       - run: python script_lr.py
         working-directory: ferrarini/ml_model
       - run: ls -la 
@@ -38,5 +38,5 @@ jobs:
         with:
           name: artifacto
           path: ferrarini/ml_model/linear_regression_model.joblib
-          
+
 
